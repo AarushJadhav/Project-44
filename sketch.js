@@ -7,16 +7,15 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(650, 650);
   
-  player = createSprite(100, 470, 40, 40);
+  player = createSprite(100, 450, 40, 40);
   player.addAnimation("running", player_Img);
   player.scale = 0.7;
 }
 
 function draw() {
-  //background(bg_Image);
-  player.y = player.y + 10
+  background(bg_Image);
   drawSprites();
 }
 
